@@ -45,7 +45,12 @@ To install to a different directory than /usr/local:
 
     $ PREFIX=/some/path sudo make install
 
-
+```
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+source ~/.bashrc
+and dont forget
+sudo ldconfig
+```
 Flexible Layouts
 ================
 AprilTag 3 supports a wide variety of possible tag layouts in addition to the classic layout supported in AprilTag 2. The tag's data bits can now go outside of the tag border, and it is also possible to define layouts with "holes" inside of the tag border where there are no data bits. In this repo we have included:
